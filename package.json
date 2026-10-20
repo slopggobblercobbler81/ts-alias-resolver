@@ -1,0 +1,29 @@
+{
+  "name": "ts-alias-resolver",
+  "version": "1.0.0",
+  "description": "Validates that TypeScript tsconfig.json path aliases resolve to existing filesystem files/directories, detecting broken imports and dead aliases.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ts-alias-resolver": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "paths",
+    "alias",
+    "validator",
+    "linter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
